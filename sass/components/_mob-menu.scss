@@ -1,0 +1,49 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding-top: 3.125rem;
+  padding-left: 2.5rem;
+
+  width: 100vw;
+  height: 100vh;
+
+  color: $accentColor;
+  background-image: linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
+
+  transform: translateX(100%);
+
+  @include transition(transform);
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.close-menu__svg {
+  fill: $accentColor;
+}
+
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mob-menu__item--link {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 100%;
+  font-family: 'Heebo', sans-serif;
+  font-size: 2rem;
+  line-height: 1.733;
+}

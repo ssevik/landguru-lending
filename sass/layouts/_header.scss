@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  max-width: 100%;
+  max-height: 62.5rem;
+  border-bottom-right-radius: 18.75rem;
+  color: $accentColor;
+  background-image: url('/images/pattern.png'),
+    linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 5.625rem;
+
+    width: 100%;
+    max-width: 120rem;
+    height: 3px;
+    background-color: $accentColor;
+    opacity: 0.1;
+  }
+
+  @media screen and(max-width: 44.375rem) {
+    min-height: 40.625rem;
+    border-bottom-right-radius: 15.625rem;
+  }
+
+  @media screen and (max-width: 20rem) {
+    border-bottom-right-radius: 9.375rem;
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and(max-width: 44.375rem) {
+    padding-top: 1.25rem;
+  }
+}
+
+.logo-header {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.687rem;
+  }
+
+  &__svg {
+    width: 1.875rem;
+    height: 1.25rem;
+    fill: $accentColor;
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.2;
+  }
+}
+
+.nav-site {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media screen and(max-width: 48rem) {
+    gap: 1rem;
+  }
+
+  @media screen and(max-width: 44.375rem) {
+    display: none;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-top: 1.562rem;
+    padding-bottom: 1.562rem;
+    padding-left: 0.312rem;
+    padding-right: 0.312rem;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    line-height: 2.062;
+
+    @include transition(transform);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.nav-site__svg {
+  margin-left: 0.312rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  fill: $accentColor;
+
+  transform: rotate(180deg);
+}
+
+.btn-header {
+  @media screen and(max-width: 44.375rem) {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media screen and(max-width: 44.375rem) {
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 1px solid $accentColor;
+    border-radius: 10px;
+
+    cursor: pointer;
+  }
+
+  .open-menu__svg {
+    fill: $accentColor;
+  }
+}

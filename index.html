@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendgGuru</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Heebo&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div class="header-menu">
+            <div class="logo logo-header">
+              <a class="logo-header__link" href="">
+                <svg class="logo-header__svg">
+                  <use href="./images/sprite.svg#logo"></use>
+                </svg>
+                <p class="logo-header__text">Landguru</p>
+              </a>
+            </div>
+
+            <nav class="nav">
+              <ul class="nav-site">
+                <li class="nav-site__item">
+                  <a class="nav-site__link" href="">Home</a>
+                </li>
+
+                <li class="nav-site__item">
+                  <a class="nav-site__link" href=""
+                    >Adversite
+                    <svg class="nav-site__svg">
+                      <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="nav-site__item">
+                  <a class="nav-site__link" href=""
+                    >Supports
+                    <svg class="nav-site__svg">
+                      <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="nav-site__item">
+                  <a class="nav-site__link" href="">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="btn btn-header">
+              <a class="btn-link btn-header__link" href="">Get Started</a>
+            </div>
+
+            <button
+              class="menu-toggle js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              data-menu-button
+            >
+              <svg class="open-menu__svg" aria-label="mobile menu button" width="30" height="20">
+                <use href="./images/sprite.svg#open-menu"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- hero start -->
+          <div class="hero">
+            <div class="hero-body">
+              <div class="hero-content">
+                <h1 class="hero-content__title">Experience your ultimate mobile application</h1>
+                <p class="hero-content__text">
+                  Get your blood tests delivered at let home collect sample from the victory of the
+                  managments that supplies best design system guidelines ever.
+                </p>
+
+                <div class="hero-content__link">
+                  <a class="btn-link hero-content__btn" href="">Get Started</a>
+                  <a class="hero-content__video" href="">
+                    <svg class="hero-content__svg" aria-label="link youtube">
+                      <use href="./images/sprite.svg#youtube-link"></use>
+                    </svg>
+                    Watch Video
+                  </a>
+                </div>
+
+                <div class="sponsor">
+                  <p class="sponsor__text">Sponsored by:</p>
+                  <img class="sponsor__img" src="./images/paypal.png" alt="paypal" width="100" />
+                  <img class="sponsor__img" src="./images/google.png" alt="Goole" width="100" />
+                  <img class="sponsor__img" src="./images/dropbox.png" alt="Dropbox" width="100" />
+                </div>
+              </div>
+
+              <div class="hero-images__imgs">
+                <img
+                  class="hero-images__img"
+                  src="./images/hero-img1.png"
+                  alt="cell phone"
+                  width="900"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- hero and -->
+      </header>
+      <!-- header and -->
+
+      <main></main>
+
+      <!-- footer start -->
+      <footer class="footer"></footer>
+      <!-- footer and -->
+    </div>
+
+    <!-- mob-menu start  -->
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle close-menu js-close-menu" type="button">
+        <svg class="close-menu__svg" aria-label="mobile menu button" width="30" height="30">
+          <use href="./images/sprite.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a class="mob-menu__item--link" href="">Home</a>
+        </li>
+
+        <li class="mob-menu__item">
+          <a class="mob-menu__item--link" href="">Adversite</a>
+        </li>
+
+        <li class="mob-menu__item">
+          <a class="mob-menu__item--link" href="">Supports</a>
+        </li>
+
+        <li class="mob-menu__item">
+          <a class="mob-menu__item--link" href="">Contact</a>
+        </li>
+      </ul>
+
+      <div class="btn">
+        <a class="btn-link" href="">Get Started</a>
+      </div>
+    </div>
+    <!-- mob-menu and -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

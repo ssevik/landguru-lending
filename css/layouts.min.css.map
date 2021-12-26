@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,AAAC,CACN,gBAAgB,CAAE,2DAA2D,CAC9E",
+    "sources": [
+        "../sass/layouts/layouts.scss",
+        "../sass/layouts/_header.scss"
+    ],
+    "names": [],
+    "file": "layouts.min.css"
+}
