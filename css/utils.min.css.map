@@ -4,7 +4,8 @@
     "sources": [
         "../sass/utils/utils.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_mixin.scss"
+        "../sass/utils/_mixin.scss",
+        "../sass/utils/_function.scss"
     ],
     "names": [],
     "file": "utils.min.css"
