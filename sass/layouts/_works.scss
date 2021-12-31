@@ -1,0 +1,145 @@
+.works {
+  margin-bottom: rem(100);
+
+  background-image: url(../images/works-bg.png),
+    linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: rem(768)) {
+    margin-bottom: rem(50);
+  }
+
+  &__body {
+    padding-top: rem(90);
+    padding-bottom: rem(156);
+
+    @media screen and (max-width: rem(768)) {
+      padding-top: rem(60);
+      padding-bottom: rem(80);
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: rem(148);
+    text-align: center;
+
+    @media screen and (max-width: rem(768)) {
+      margin-bottom: rem(70);
+    }
+  }
+}
+
+// ------card------------------
+
+.works-card {
+  display: flex;
+
+  column-gap: rem(51);
+
+  @media screen and (max-width: rem(1040)) {
+    flex-wrap: wrap;
+    row-gap: rem(25);
+  }
+
+  @media screen and (max-width: rem(560)) {
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+
+    position: relative;
+
+    @media screen and (min-width: rem(1277)) {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 76.74%;
+        height: 20%;
+        left: 33%;
+        background-image: url(../images/works-decor.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      &:nth-child(odd) {
+        &::after {
+          top: 0;
+        }
+      }
+
+      &:nth-child(even) {
+        &::after {
+          top: 7%;
+          transform: rotateX(180deg);
+        }
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (max-width: rem(1040)) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__num {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: rem(25);
+
+    width: 72px;
+    height: 72px;
+
+    color: $secondTextColor;
+    background-color: $accentColor;
+    border-radius: 40%;
+
+    font-size: rem(30);
+    line-height: 1.233;
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+
+    //   width: 76.74%;
+    //   height: 55%;
+    //   background-image: url(../images/works-decor.svg);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    // }
+  }
+
+  &__title {
+    flex-grow: 1;
+
+    margin-bottom: rem(15);
+
+    color: $accentColor;
+
+    font-weight: 700;
+    font-size: rem(22);
+    line-height: 1.545;
+  }
+
+  &__text {
+    color: rgba($accentColor, 0.65);
+  }
+}

@@ -1,0 +1,40 @@
+.mobile-body {
+  display: flex;
+  align-items: center;
+  padding-top: rem(130);
+
+  border-top-left-radius: rem(250);
+
+  background: linear-gradient(
+    287.67deg,
+    rgba(255, 253, 230, 0.35) -3.53%,
+    rgba(255, 253, 230, 0.07) -3.52%,
+    rgba(224, 239, 250, 0.35) 92.55%
+  );
+
+  @media screen and (max-width: rem(768)) {
+    flex-direction: column;
+    padding-top: rem(60);
+    border-top-left-radius: rem(150);
+  }
+
+  &__img {
+    margin-right: rem(62);
+    @media screen and (max-width: rem(768)) {
+      margin-right: 0;
+      margin-bottom: rem(30);
+    }
+  }
+
+  .body-content {
+    flex-basis: rem(510);
+
+    &__title {
+      margin-bottom: rem(40);
+    }
+
+    &__text {
+      margin-bottom: rem(30);
+    }
+  }
+}

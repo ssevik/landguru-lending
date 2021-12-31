@@ -1,0 +1,29 @@
+.subtitle {
+  color: $subTitle;
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: 2.857;
+  letter-spacing: rem(2);
+  text-transform: uppercase;
+
+  &--color {
+    color: rgba($accentColor, 0.7);
+  }
+}
+
+.title {
+  color: $accentTextColor;
+
+  font-weight: 700;
+  font-size: rem(36);
+  line-height: 1.527;
+  letter-spacing: rem(-1.5);
+
+  @media screen and(max-width: rem(460)) {
+    font-size: rem(26);
+  }
+
+  &--color {
+    color: $accentColor;
+  }
+}

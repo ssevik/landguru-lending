@@ -1,0 +1,12 @@
+.item__img {
+  max-width: 100%;
+
+  &__title {
+    color: $accentTextColor;
+
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: 1.666;
+    text-align: center;
+  }
+}

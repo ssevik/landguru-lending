@@ -1,11 +1,9 @@
-// @function rem($size) {
-//   $remSize: $size / $fz;
-//   @return $remSize * 1rem;
-// }
+@function rem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
 
-@use 'sass:math';
-
-@function rem($px) {
-  $result: math.div($px, 16) + rem;
-  @return $result;
+@function prc($pxOne, $pxTwo) {
+  $prcValue: ($pxOne / $pxTwo) * 100%;
+  @return $prcValue;
 }

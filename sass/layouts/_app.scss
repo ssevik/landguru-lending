@@ -1,0 +1,48 @@
+.app {
+  padding-bottom: rem(218);
+}
+
+.app-desc {
+  margin-bottom: rem(78);
+  text-align: center;
+}
+
+.app-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: rem(66);
+  row-gap: rem(120);
+
+  @media screen and(max-width: rem(375)) {
+    row-gap: rem(60);
+  }
+
+  &__item {
+    display: flex;
+
+    max-width: rem(370);
+    @media screen and(max-width: rem(375)) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    margin-right: rem(25);
+    align-self: flex-start;
+
+    @media screen and(max-width: rem(375)) {
+      margin-right: 0;
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__desc {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: rem(15);
+  }
+}

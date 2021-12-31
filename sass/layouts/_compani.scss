@@ -1,0 +1,41 @@
+.compani {
+  padding-bottom: rem(234);
+
+  @media screen and (max-width: rem(768)) {
+    padding-bottom: rem(100);
+  }
+}
+.compani-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: rem(768)) {
+    text-align: center;
+  }
+}
+
+.compani-content {
+  flex: 1 1 44%;
+  padding-right: rem(10);
+
+  @media screen and (max-width: rem(768)) {
+    padding-right: 0;
+  }
+
+  &__title {
+    margin-bottom: rem(40);
+  }
+
+  &__text {
+    margin-bottom: rem(30);
+  }
+}
+
+.compani-img {
+  flex-basis: 56%;
+
+  @media screen and (max-width: rem(768)) {
+    display: none;
+  }
+}

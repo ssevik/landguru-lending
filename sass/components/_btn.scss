@@ -29,4 +29,14 @@
     background-color: $accentColor;
     color: $accentTextColor;
   }
+
+  &--color {
+    background-color: $bgColor;
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+      border-color: $bgColor;
+    }
+  }
 }

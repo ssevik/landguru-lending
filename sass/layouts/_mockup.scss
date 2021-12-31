@@ -1,0 +1,120 @@
+.mockup {
+  margin-bottom: rem(166);
+
+  &__body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: rem(98);
+    padding-left: rem(104);
+
+    @media screen and(max-width: rem(1185)) {
+      padding-left: 0;
+    }
+
+    @media screen and(max-width: rem(768)) {
+      flex-wrap: wrap;
+      row-gap: rem(60);
+    }
+  }
+
+  &__img {
+    flex: 0 1 rem(480);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 23%;
+      right: 47%;
+      display: block;
+      width: 150.352%;
+      height: 47%;
+      background: linear-gradient(
+        106.43deg,
+        rgba(255, 253, 230, 0.35) -1.4%,
+        rgba(255, 253, 230, 0.07) -1.39%,
+        rgba(224, 239, 250, 0.35) 100.87%
+      );
+      border-radius: 200px;
+      z-index: -1;
+
+      @media screen and(max-width: rem(768)) {
+        top: 15%;
+        right: 24%;
+        height: 26%;
+      }
+
+      @media screen and(max-width: rem(768)) {
+        display: none;
+      }
+    }
+  }
+}
+
+.mockup-content {
+  flex: 1 1 auto;
+
+  &__title {
+    margin-bottom: rem(54);
+    max-width: 510px;
+
+    @media screen and(max-width: rem(768)) {
+    }
+  }
+}
+
+.mockup-card {
+  display: flex;
+
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+
+    padding-top: rem(27);
+    padding-right: rem(20);
+    padding-bottom: rem(27);
+    padding-left: rem(31);
+
+    max-width: rem(452);
+
+    @include transition(background-color);
+
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+
+      @media screen and(max-width: rem(460)) {
+        margin-bottom: rem(25);
+      }
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $accentColor;
+      box-shadow: 0px 8px 24px rgba(69, 88, 157, 0.07);
+    }
+
+    @media screen and(max-width: rem(460)) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    align-self: flex-start;
+
+    margin-right: rem(18);
+
+    @media screen and(max-width: rem(460)) {
+      margin-right: 0;
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20);
+
+    @media screen and(max-width: rem(460)) {
+      margin-bottom: rem(14);
+    }
+  }
+}
